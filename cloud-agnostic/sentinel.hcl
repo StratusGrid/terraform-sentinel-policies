@@ -14,10 +14,10 @@ module "tfrun-functions" {
     source = "../common-functions/tfrun-functions/tfrun-functions.sentinel"
 }
 
-policy "allowed-datasources" {
-    source = "./allowed-datasources.sentinel"
-    enforcement_level = "advisory"
-}
+# policy "allowed-datasources" {
+#     source = "./allowed-datasources.sentinel"
+#     enforcement_level = "advisory"
+# }
 
 policy "allowed-providers" {
     source = "./allowed-providers.sentinel"
@@ -29,20 +29,20 @@ policy "allowed-provisioners" {
     enforcement_level = "advisory"
 }
 
-policy "allowed-resources" {
-    source = "./allowed-resources.sentinel"
-    enforcement_level = "advisory"
-}
+# policy "allowed-resources" {
+#     source = "./allowed-resources.sentinel"
+#     enforcement_level = "advisory"
+# }
 
 policy "limit-cost-and-percentage-increase" {
     source = "./limit-cost-and-percentage-increase.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "limit-cost-by-workspace-name" {
-    source = "./limit-cost-by-workspace-name.sentinel"
-    enforcement_level = "advisory"
-}
+# policy "limit-cost-by-workspace-name" {
+#     source = "./limit-cost-by-workspace-name.sentinel"
+#     enforcement_level = "advisory"
+# }
 
 policy "limit-proposed-monthly-cost" {
     source = "./limit-proposed-monthly-cost.sentinel"
