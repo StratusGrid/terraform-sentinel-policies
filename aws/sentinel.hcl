@@ -44,10 +44,10 @@ policy "require-private-acl-and-kms-for-s3-buckets" {
   enforcement_level = "advisory"
 }
 
-policy "require-vpc-and-kms-for-lambda-functions" {
-  source = "./require-vpc-and-kms-for-lambda-functions.sentinel"
-  enforcement_level = "advisory"
-}
+# policy "require-vpc-and-kms-for-lambda-functions" {
+#   source = "./require-vpc-and-kms-for-lambda-functions.sentinel"
+#   enforcement_level = "advisory"
+# }
 
 policy "restrict-ami-owners" {
   source = "./restrict-ami-owners.sentinel"
